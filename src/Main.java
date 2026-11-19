@@ -32,6 +32,24 @@ public class Main {
 
 
 
+        String[] characters ={
+                "Goku",
+                "Ichigo",
+                "Yusuke",
+                "Dai",
+                "Luffy",
+                "Naruto"
+        };
+
+        System.out.println("\nHere are the potential characters it could be");
+
+
+        for(int i = 0; i < characters.length; i ++){
+            System.out.println(characters[i]);
+        }
+
+
+
 
         String[] clues ={
                 "I am a saiyan",
@@ -47,6 +65,7 @@ public class Main {
             System.out.println("Clue " + (i + 1) + ": " + clues[i]);
 
         }
+
 
         System.out.println("Please enter your answer.");
         String playerGuess = scanner.nextLine();    // ANS is "Tarble";
