@@ -45,6 +45,7 @@ public class Main {
 
         for(int i = 0; i < clues.length; i++){
             System.out.println("Clue " + (i + 1) + ": " + clues[i]);
+
         }
 
         System.out.println("Please enter your answer.");
