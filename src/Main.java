@@ -38,39 +38,42 @@ public class Main {
                 "Yusuke",
                 "Dai",
                 "Luffy",
-                "Naruto"
+                "Naruto",
+                "Tarble"
         };
 
         System.out.println("\nHere are the potential characters it could be");
 
 
         for(int i = 0; i < characters.length; i ++){
-            System.out.println(characters[i]);
+            System.out.println((i + 1) + ": " + characters[i]);
         }
 
 
 
+        String [][] animeClues ={
+                {"I am a saiyan", "in my 20s my power level was around 8000", "I am married to a princess"},
+                {"I only recently have been using my true power", "I am the strongest of the big three" , "My dad gave up something important"},
+                {"I used to not give it my all", "I once used my life energy to win a fight", "My special move is the rei-gun"},
+                {"I am the son of a dragon", "I was taught by the hero", "i wield the dragon crest"},
+                {"I am the son of dragon", "I have the strongest will", "i carry the will of D"},
+                {"I am the son of a alien", "I broke the cycle of reincaranation", "I am a Jinjuriki"},
+                {"I am a saiyan","My planet was destroyed at the hands of Freezer","And I haven't seen my older brother in a long time"}
 
-        String[] clues ={
-                "I am a saiyan",
-                "My planet was destroyed at the hands of Freezer",
-                "And I haven't seen my older brother in a long time"
+
         };
 
         System.out.println();
 
-        System.out.println("Here are your clues.");
-
-        for(int i = 0; i < clues.length; i++){
-            System.out.println("Clue " + (i + 1) + ": " + clues[i]);
-
+        for(int i = 0; i < animeClues[0].length; i++){
+            System.out.println("Clue " + (i + 1) + ": " + animeClues[0][i]);
         }
 
 
         System.out.println("Please enter your answer.");
-        String playerGuess = scanner.nextLine();    // ANS is "Tarble";
+        String playerGuess = scanner.nextLine();
 
-        String correctAns = "Tarble";
+        String correctAns = characters[0];
 
 
         if(playerGuess.equalsIgnoreCase(correctAns)){
